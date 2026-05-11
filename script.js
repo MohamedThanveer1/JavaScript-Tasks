@@ -1,230 +1,151 @@
-// Section 1: Variables (1–8)
+// Task1 -Predict the output
 
-// 1 What is the output?
-// var a = 10;
-// a = 15;
+// console.log(typeof("10"+5));
 
-// console.log(a);
-// Ans : 15 
+// Ans: 105 ,datatype string
 
-// 2 What happens here?
-// let b = 20;
-// let b = 30;
+// console.log(typeof(10 + true));
 
-// console.log(b);
-// Ans : Syntax error
+// Ans 11 ,boolean
 
-// 3 What is the output?
-// const c = 50;
+// console.log(typeof(false + null));
 
-// console.log(c);
-// Ans : 50
+// Ans 0 ,boolean
 
-// 4.Identify Error
-// const x = 10;
-// x = 20;
+// console.log(typeof("Hello" + undefined));
 
-// console.log(x);
-// Ans TypeError  
+// Ans Helloundefined ,string
 
-// 5.
-// var p = 5;
-// var p = 10;
+// console.log(typeof([1,2]+5));
 
-// console.log(p);
-// Ans 10
+// Ans 1,25 Number
 
-// 6.
-// let q = 25;
-// q = q + 10;
+// Task2 -Implicit Type Casting examples 
+// 1.string+Number
+// console.log(typeof ("4"+2));
 
-// console.log(q);
-// Ans 35
+// Ans string
 
-// 7.
-// const r = 7;
-
-// console.log(r + 3);
-// Ans 10
-
-// 8.Fill corect keyword
-// _ a = 10;
-// Ans let or const or var
-
-// Section 2: Console Methods (9–12)
-
-//9. which method prints normal output?
-// Ans console.log()
-
-// 10.Which method shows warning?
-// Ans console.warn();
-
-// 11.Which method shows error?
-// Ans console.error();
-
-// 12.What does this do?
-//Ans console.clear(a) Thise clear the data and print No Value
-
-// Section 3: Data Types (13–18)
-
-// 13.
-// let a = "hello";
-// console.log(typeof a);
-
-// Ans: string
-
-// 14.
-// let b = 100;
-// console.log(typeof b);
+// 2.Boolean + Number 
+// console.log(typeof (true + 1));
 
 // Ans number
 
-// 15.
-// let c = false;
-// console.log(typeof c);
+// 3.Array + string
+// console.log(typeof([1,"s",true],"abc"));
 
-// Ans boolean
+// Ans string
 
-// 16.What is type of null?
-// let d;
-// console.log(d);
+// 4.object+number
+// console.log(typeof({name:"thanveer"}+32));
 
-// Ans object
+// Ans string
 
-// 17.Convert string to number:
+// 5.Null + number
+// console.log(typeof(null + 10));
 
-// let a= "25";
+// Ans number
 
-// Ans console.log(Number(a));
+// Task3 -Explicit Type Casting
+// Convert the following into number
 
-// Section 4: Arrays (19–24)
-
-//19. Create array of 3 fruits.
-// Output?
-
-// Ans 
-//  let arr = ["apple","banana","papaya"];
-
-//20.output
-// let arr = ["a","b","c"];
-// console.log(arr[1]);
-
-// Ans b
-
-// 21.output
-// let arr = ["x","y","z"];
-// console.log(arr[arr.length-1]);
-
-// Ans z
-
-// 22.How to get first element?
-// Ans console.log(arr[0]); 
-
-// 23.Output?
-// let arr = ["apple","banana"];
-// console.log(arr.length);
-
-// Ans 2
-
-// 24.Add new element to array.
-// Ans arr.push("mango")
-
-// section 5:Objects(25-28)
-// 25.create object with name and age
-// let oject = {name:"Mohamed Thanveer.M",
-//     age:22}
-
-// 26.output?
-// let object = {name:"Thanveer"};
-// console.log(object.name);
-
-// 27.output?
-// let obj = {
-//     fruits: ["apple","banana"]
-// };
-// console.log(obj.fruits[1]);
-
-// Ans banana
-
-// 28.How to access last element inside object array?
-// obj. 
-// let obj = {
-//     fruits: ["apple","banana"]
-// };
-
-// Ans let item = obj.fruits[obj.fruits.length-1] 
-//  console.log(item);
-
-// section6.Arithmetic Operators(29-32)
-
-// 29.output?
-// console.log(5+3);
-
-// Ans 8
-
-// 30.output?
-// console.log(10%3);
+// console.log(Number("500"));
+// console.log(Number(true));
+// console.log(Number(false));
+// console.log(Number(null));
+// console.log(Number("abc"));
+// console.log(Number([100]));
  
-// Ans 1 
+// Task4 -Boolean Constructor
+// console.log(Boolean(""));
+// console.log(Boolean("javascript"));
+// console.log(Boolean(0));
+// console.log(Boolean(1));
+// console.log(Boolean(null));
+// console.log(Boolean(undefined));
+// console.log(Boolean([]));
+// console.log(Boolean({}));
 
-// 31.output?
-// console.log(2**3);
+// Task5-Student Pass or Fail
+// let mark = 45;
 
-// Ans 8
+// if (mark > 35){
+//     console.log("Pass"); 
+// }
+// else{
+//     console.log("Fail"); 
+// }
 
-// 32.output?
-// console.log(10/2);
- 
-// Ans 5
+// Task 6 -Voting Eligiblity
+// let age = 20;
 
-// section 7.Increment/Decrement(33-36)
-// 33.output
+// if (age > 18) {
+//     console.log("Eligible"); 
+// }
+// else{
+//     console.log("Not Eligible"); 
+// }
 
-// let a = 5;
-// a++;
-// console.log(a);
+// Task 7 -Greatest Number
+// Find greatest among 3 numbers using if else if.
+// let a = 50;
+// let b = 80;
+// let c = 30;
 
-// Ans 6
+// if (a > b && a > c) {
+//     console.log(`Greatest number is ${a}`);
+// }
+// else if(b > a && b > c){
+//     console.log(`Greatest number is ${b}`); 
+// }
+// else{
+//     console.log(`Greatest number is ${c}`); 
+// }
 
-// 34.output?
-// let b = 5;
-// let c = b++;
-// console.log(b ,c);
+// Task 8 -Trafic Light System
+// using switch statement
 
-// Ans (6,5)
+// let signal = "green" ;
 
-// 35.output?
-// let x = 5;
-// let y = ++x;
-// console.log(x ,y);
+// switch (signal){
+//     case "red" : console.log("Stop vehicle");
+//     break;
 
-// Ans (6,6)
+//     case "yellow" : console.log("start vehicle");
+//     break;
 
-// 36.output?
-// let m = 3;
-// let n = m--;
-// console.log(m ,n);
+//     case "green" : console.log("Move vehicle"); 
+// }
 
-// Ans (2,3)
+// Task 9 -Login System
+// Create variables:
 
-// section 8:comparision&Logiacal(37-39)
-// 37.output?
-// console.log(5 == "5");
+// let userName = "admin";
+// let password = "1234";
 
-// Ans true
+// if (userName == "admin") {
+//     if (password == "1234") {
+//         console.log("Login Success"); 
+//     } 
+// }
+// else{
+//     console.log("Invalid Login"); 
+// }
 
-// 38 output?
-// console.log(5 === "5");
+// Task 10 -Session Finder
+// Take hour value:
 
-// Ans false
+let hour = 20;
 
-// 39.output
-// console.log(true && false || true);
-
-// Ans true
-
-// section 9:Ternary(40)
-// 40.output?
-// 5<3 ? console.log("Yes"):console.log("No");
-
-// Ans No
+if (hour >= 1 && hour <= 12) {
+    console.log("Morning"); 
+}
+else if(hour >=13 && hour <= 15){
+    console.log("Afternoon"); 
+}
+else if (hour >= 16 && hour <= 19) {
+    console.log("Evening"); 
+}
+else if (hour >= 20 && hour <= 24){
+    console.log("Night"); 
+}

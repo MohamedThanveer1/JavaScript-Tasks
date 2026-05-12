@@ -1,151 +1,145 @@
-// Task1 -Predict the output
+// Looping Statements
+// 1.Print Numbers
+// Print numbers from 1 to 20 using for loop
 
-// console.log(typeof("10"+5));
-
-// Ans: 105 ,datatype string
-
-// console.log(typeof(10 + true));
-
-// Ans 11 ,boolean
-
-// console.log(typeof(false + null));
-
-// Ans 0 ,boolean
-
-// console.log(typeof("Hello" + undefined));
-
-// Ans Helloundefined ,string
-
-// console.log(typeof([1,2]+5));
-
-// Ans 1,25 Number
-
-// Task2 -Implicit Type Casting examples 
-// 1.string+Number
-// console.log(typeof ("4"+2));
-
-// Ans string
-
-// 2.Boolean + Number 
-// console.log(typeof (true + 1));
-
-// Ans number
-
-// 3.Array + string
-// console.log(typeof([1,"s",true],"abc"));
-
-// Ans string
-
-// 4.object+number
-// console.log(typeof({name:"thanveer"}+32));
-
-// Ans string
-
-// 5.Null + number
-// console.log(typeof(null + 10));
-
-// Ans number
-
-// Task3 -Explicit Type Casting
-// Convert the following into number
-
-// console.log(Number("500"));
-// console.log(Number(true));
-// console.log(Number(false));
-// console.log(Number(null));
-// console.log(Number("abc"));
-// console.log(Number([100]));
- 
-// Task4 -Boolean Constructor
-// console.log(Boolean(""));
-// console.log(Boolean("javascript"));
-// console.log(Boolean(0));
-// console.log(Boolean(1));
-// console.log(Boolean(null));
-// console.log(Boolean(undefined));
-// console.log(Boolean([]));
-// console.log(Boolean({}));
-
-// Task5-Student Pass or Fail
-// let mark = 45;
-
-// if (mark > 35){
-//     console.log("Pass"); 
-// }
-// else{
-//     console.log("Fail"); 
+// for (let i = 1; i<=20; i++) {
+//     console.log(i); 
 // }
 
-// Task 6 -Voting Eligiblity
-// let age = 20;
+// 2.Odd Numbers
+// print all odd numbers from 1 to 50
 
-// if (age > 18) {
-//     console.log("Eligible"); 
-// }
-// else{
-//     console.log("Not Eligible"); 
-// }
-
-// Task 7 -Greatest Number
-// Find greatest among 3 numbers using if else if.
-// let a = 50;
-// let b = 80;
-// let c = 30;
-
-// if (a > b && a > c) {
-//     console.log(`Greatest number is ${a}`);
-// }
-// else if(b > a && b > c){
-//     console.log(`Greatest number is ${b}`); 
-// }
-// else{
-//     console.log(`Greatest number is ${c}`); 
+// for (let i = 0; i <=50; i++) {
+//     if (i%2 != 0) {
+//         console.log(i);     
+//     }
 // }
 
-// Task 8 -Trafic Light System
-// using switch statement
+// 3.Multiplication Table
+// print multiplication table of 7
 
-// let signal = "green" ;
-
-// switch (signal){
-//     case "red" : console.log("Stop vehicle");
-//     break;
-
-//     case "yellow" : console.log("start vehicle");
-//     break;
-
-//     case "green" : console.log("Move vehicle"); 
+// for (let i = 1; i <= 10; i++) {
+//     console.log("7 "+"x "+i +" = " + (7) * i);
 // }
 
-// Task 9 -Login System
-// Create variables:
+// 4.Reverse Counting
+// using while loop ,printing numbers from 20 to 1
 
-// let userName = "admin";
-// let password = "1234";
+// let i=20
+// while (i >= 1) {
+//     console.log(i);    
+//     i--
+// }
 
-// if (userName == "admin") {
-//     if (password == "1234") {
-//         console.log("Login Success"); 
+// 5.Sum of Numbers
+// Find total sum of numbers from 1 to 100
+
+// let count = 0;
+// for (let i = 1; i <= 100; i++) {
+//     count += i 
+// }
+// console.log(count);
+
+// 6.Array Loop
+// Loop through this array and print all values
+
+// let fruits = ["apple" ,"banana" ,"orange" ,"grapes"];
+// for (let i of fruits) {
+//     console.log(i);
+// }
+
+//7.Count even Numbers
+// Count how many even numbers are present between 1 to 50.
+
+// let count = 0;
+// for (let i = 1; i <=50; i++) {
+//     if (i%2 == 0) {
+//         count += 1        
+//     }
+// }
+// console.log(count);
+
+// 8.Star Pattern
+// Print thise pattern using loops:
+
+// for (let i = 1; i <=5; i++) {
+//     let row = "";
+
+//     for (let j = 1; j<= i; j++) {
+//         row +="*"
+//     }
+//     console.log(row); 
+// }
+
+// Functions
+// 9.Simple Functions
+// Create a function named welcome() that prints.
+
+// function welcome(){
+//     console.log("Welcome to JavaScript");    
+// }
+// welcome();
+
+// 10.Function with Parameter
+// function employee(name){
+//     return ("Hello "+name); 
+// }
+// console.log(employee('Mohamed Thanveer'));
+
+// 11.Add Two Numbers
+// Create a function that takes 2 numbers and returns the addition
+
+// function add(a,b){
+//     return a+b;
+// }
+// console.log(add(10,20));
+
+// 12.Salary Bonus
+// Create a function that adds bonus to employee salary.
+
+// function payment(salary) {
+//     let bonus = 5000
+//     return salary + bonus
+// }
+// console.log(payment(500000));
+
+// 13.Object loop
+// Print all keys and values using for in
+
+// let student = {
+//     name: "Mohamed Thanveer",
+//     cours: "Java Script",
+//     marks: 95
+// }
+// for (let a in student){
+//     console.log(a); 
+// }
+
+// 14.Full largest Number
+// Create a function to find the largest number between two values.
+
+// function largestNumber(a,b){
+//     if (a > b){
+//         return a;
 //     } 
+//     else{
+//         return b;
+//     }
 // }
-// else{
-//     console.log("Invalid Login"); 
-// }
+// console.log(largestNumber(10,50));
 
-// Task 10 -Session Finder
-// Take hour value:
-
-let hour = 20;
-
-if (hour >= 1 && hour <= 12) {
-    console.log("Morning"); 
+// 15.Mini Employee Task
+// Create an employee object and print
+let employee = {
+    name: "Mohamed Thanveer",
+    department:"CSE",
+    salary:200000,
+    bonus:4000
 }
-else if(hour >=13 && hour <= 15){
-    console.log("Afternoon"); 
+function displayEmployee(emp){
+    console.log("Employee Name:",emp.name);
+    console.log("Department:",emp.department);
+    console.log("Salary:",emp.salary);
+    console.log("Bonus:",emp.bonus);    
 }
-else if (hour >= 16 && hour <= 19) {
-    console.log("Evening"); 
-}
-else if (hour >= 20 && hour <= 24){
-    console.log("Night"); 
-}
+displayEmployee(employee);

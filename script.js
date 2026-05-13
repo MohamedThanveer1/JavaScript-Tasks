@@ -1,145 +1,156 @@
-// Looping Statements
-// 1.Print Numbers
-// Print numbers from 1 to 20 using for loop
+// Task1 -Basic Function
+// Create a function called welcome user
 
-// for (let i = 1; i<=20; i++) {
-//     console.log(i); 
+// function welcomeUser(name){
+//     console.log("Welcome ",name);
+// }
+// welcomeUser("Thanveer")
+
+// Task2 - Parameter + Return
+// Create a function square Number.
+
+// function squareValue(number){
+//     console.log(number**2); 
+// }
+// squareValue(2)
+
+// Task 3-Object Function
+// Create an bonus
+
+// let employe = {
+//     name:"Rahul",
+//     salary: 50000
+// }
+// function employeBonus(bonus){
+//     let totalSalary = employe.salary + bonus;
+//     console.log(employe.name);
+//     console.log(totalSalary);
+// }
+// employeBonus(5000);
+
+// Task 4- Scope Checking
+// Inside function:
+// Create var ,let ,const
+
+// Ans
+// function scopeTest(){
+//     if (true){
+//         var varVariable = "Var variable";
+//         let letVariable = "Let variable";
+//         const constVariable = "Const variable";
+//     }
+
+//     console.log(varVariable);
+//     console.log(letVariable);
+//     console.log(constVariable); 
+// }
+// scopeTest()
+
+// varVariable gives output ,letVariable and constVariable gives reference error  
+
+// Tak 5-Arrow Function
+// Conver into Arrow function
+
+// let add =(a ,b) =>{
+//     console.log(5 + 10); 
+// }
+// add()
+
+// Task 6- Callback Function
+
+// function multiply(a ,b) {
+//     return a * b;
 // }
 
-// 2.Odd Numbers
-// print all odd numbers from 1 to 50
+// function calculator(callback ,num1 ,num2){
+//     let res = callback(num1 ,num2)
+//     console.log(res);
+// }
 
-// for (let i = 0; i <=50; i++) {
-//     if (i%2 != 0) {
-//         console.log(i);     
+// calculator(multiply ,5 ,2);
+
+// o/p 10
+
+// Task 7 -Generate Function
+// Create generator function offers.
+
+// function *offers(){
+//     yield "50% OFF",
+//     yield "Free Delivery",
+//     yield "Cashback"
+// }
+// let offer = offers()
+// console.log(offer.next().value);
+// console.log(offer.next().value);
+// console.log(offer.next().value);
+
+// Task 8 -Default Parameter
+// Create student(name ,course = "JAVASRIPT")
+
+// function student(name ,course = "JAVASRIPT"){
+//     console.log("Name :",name);
+//     console.log("Course :",course); 
+// }
+// student("Thanveer")
+
+// Task 9 -Currying
+// Create currying function for multiplication
+
+// function multiplication(a) {
+//     return function(b){
+//         return function(c){
+//             return a*b*c
+//         }
 //     }
 // }
+// console.log(multiplication(2)(3)(4));
 
-// 3.Multiplication Table
-// print multiplication table of 7
+// o/p:24
 
-// for (let i = 1; i <= 10; i++) {
-//     console.log("7 "+"x "+i +" = " + (7) * i);
+// Task 10 -Spread Operator 
+// Merge These arrays
+
+// {et a = [1 ,2 ,3];
+// let b } [4 ,5 ,6];
+
+// let totalArray = [...a,...b]
+
+
+// console.log(totalArray);
+
+// o/p:[1,2,3,4,5,6]
+
+//Task 11 -Object Spread
+// Merge two objects
+
+// let obj1 = {
+//     name:"Navi"
+// }
+// let obj2 = {
+//     role:"Developer"
 // }
 
-// 4.Reverse Counting
-// using while loop ,printing numbers from 20 to 1
+// let mergeObject = {...obj1,...obj2};
+// console.log(mergeObject);
 
-// let i=20
-// while (i >= 1) {
-//     console.log(i);    
-//     i--
-// }
+// o/p  {
+//      name:"Navi",
+//      role:"Developer"} 
 
-// 5.Sum of Numbers
-// Find total sum of numbers from 1 to 100
+// Task 12 -Rest Operator
+// create function
+// numbers(...num)
 
-// let count = 0;
-// for (let i = 1; i <= 100; i++) {
-//     count += i 
-// }
-// console.log(count);
-
-// 6.Array Loop
-// Loop through this array and print all values
-
-// let fruits = ["apple" ,"banana" ,"orange" ,"grapes"];
-// for (let i of fruits) {
-//     console.log(i);
-// }
-
-//7.Count even Numbers
-// Count how many even numbers are present between 1 to 50.
-
-// let count = 0;
-// for (let i = 1; i <=50; i++) {
-//     if (i%2 == 0) {
-//         count += 1        
+// function numbers(...a){
+//     console.log(a);
+    
+//     let sum = 0;
+//     for (let i = 0; i <a.length; i++) {
+//         sum += a[i];
 //     }
+//     console.log(sum);
 // }
-// console.log(count);
+// numbers(1,2,3,4);
 
-// 8.Star Pattern
-// Print thise pattern using loops:
 
-// for (let i = 1; i <=5; i++) {
-//     let row = "";
-
-//     for (let j = 1; j<= i; j++) {
-//         row +="*"
-//     }
-//     console.log(row); 
-// }
-
-// Functions
-// 9.Simple Functions
-// Create a function named welcome() that prints.
-
-// function welcome(){
-//     console.log("Welcome to JavaScript");    
-// }
-// welcome();
-
-// 10.Function with Parameter
-// function employee(name){
-//     return ("Hello "+name); 
-// }
-// console.log(employee('Mohamed Thanveer'));
-
-// 11.Add Two Numbers
-// Create a function that takes 2 numbers and returns the addition
-
-// function add(a,b){
-//     return a+b;
-// }
-// console.log(add(10,20));
-
-// 12.Salary Bonus
-// Create a function that adds bonus to employee salary.
-
-// function payment(salary) {
-//     let bonus = 5000
-//     return salary + bonus
-// }
-// console.log(payment(500000));
-
-// 13.Object loop
-// Print all keys and values using for in
-
-// let student = {
-//     name: "Mohamed Thanveer",
-//     cours: "Java Script",
-//     marks: 95
-// }
-// for (let a in student){
-//     console.log(a); 
-// }
-
-// 14.Full largest Number
-// Create a function to find the largest number between two values.
-
-// function largestNumber(a,b){
-//     if (a > b){
-//         return a;
-//     } 
-//     else{
-//         return b;
-//     }
-// }
-// console.log(largestNumber(10,50));
-
-// 15.Mini Employee Task
-// Create an employee object and print
-let employee = {
-    name: "Mohamed Thanveer",
-    department:"CSE",
-    salary:200000,
-    bonus:4000
-}
-function displayEmployee(emp){
-    console.log("Employee Name:",emp.name);
-    console.log("Department:",emp.department);
-    console.log("Salary:",emp.salary);
-    console.log("Bonus:",emp.bonus);    
-}
-displayEmployee(employee);
+// Mini Challenge
